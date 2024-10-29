@@ -94,7 +94,7 @@
             <div>
                 <a href="#homepage" ><strong>USpeech</strong></a>
                 <a href="#introduction" >Introduction</a>
-                <!-- <a href="#video" >Video</a> -->
+                <a href="#video" >Video</a>
                 <a href="#results" >Results</a>
             </div>
         </div>
@@ -111,24 +111,17 @@
 
             <div id="introduction" class="teaser-image">
                 <p class="caption">
-                    Speech enhancement is pivotal in human-computer interaction, especially in ubiquitous devices. 
-                    Ultrasound-based speech enhancement has emerged as an attractive choice without the need for extra hardware. 
-                    Existing solutions, however, rely on labor-intensive and time-consuming data collection under various settings, limiting the full potential of ultrasound-based speech enhancement. 
-                    To address the challenge, we propose USpeech, a cross-modal ultrasound synthesis system for speech enhancement with minimal human effort. 
-                    The ultrasound synthesis framework is a two-stage framework to establish a correspondence between visual and ultrasonic modalities by leveraging audio as the bridge, overcoming challenges caused by the lack of paired video-ultrasound datasets and the inherent heterogeneity between light and sound. 
-                    Our framework incorporates contrastive audio-video pre-training to project multiple modalities into a shared semantic space and employs an audio-ultrasound encoder-decoder for ultrasound synthesis. 
-                    Based on this, we present a speech enhancement network to enhance the speech in Time-Frequency domain and further recover the clean speech waveform via the neural vocoder.
-                    Comprehensive experiments show that USpeech demonstrates remarkable performance using synthetic ultrasound data, comparable to that using physical data, while significantly outperforming state-of-the-art baselines.
+                    Speech enhancement is crucial in human-computer interaction, especially for ubiquitous devices. Ultrasound-based speech enhancement has emerged as an attractive choice because of its superior ubiquity and performance. However, inevitable interference from unexpected and unintended sources during audio-ultrasound data acquisition makes existing solutions rely heavily on human effort for data collection and processing. This leads to significant data scarcity that limits the full potential of ultrasound-based speech enhancement. To address this, we propose USpeech, a cross-modal ultrasound synthesis framework for speech enhancement with minimal human intervention. At its core is a two-stage framework that establishes correspondence between visual and ultrasonic modalities by leveraging audible audio as a bridge. This approach overcomes challenges from the lack of paired video-ultrasound datasets and the inherent heterogeneity between video and ultrasound data. Our framework incorporates contrastive video-audio pre-training to project modalities into a shared semantic space and employs an audio-ultrasound encoder-decoder for ultrasound synthesis. We then present a speech enhancement network that enhances speech in the time-frequency domain and recovers the clean speech waveform via a neural vocoder. Comprehensive experiments show USpeech achieves remarkable performance using synthetic ultrasound data comparable to physical data, significantly outperforming state-of-the-art ultrasound-based speech enhancement baselines. 
                 </p>
-                <img src="figures/overall.png" style="width:60%;">
+                <img src="figures/overall.png" style="width:100%;">
             </div>
 
-            <!-- <div id="video" class="section-title">Video</div>
+            <div id="video" class="section-title">Video</div>
             <div class="video">
                 <video width="80%" controls>
                     <source src="videos/video_preprint.mp4" type="video/mp4">
                 </video>
-            </div> -->
+            </div>
 
 
             <div id="results" class="section-title">Results</div>
