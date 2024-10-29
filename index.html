@@ -127,7 +127,7 @@
             <div id="results" class="section-title">Results</div>
             <p class="caption">
                 <strong>Section 1: Main Experiments</strong> <br>
-                In this section, we demonstrate the recovery results of USpeech and other baselines. (See Section 7.3 in paper)
+                In this section, we demonstrate the recovery results of USpeech and other baselines. (See Section 7.1 in paper)
             </p>
             <div class="content">
                 <div class="row" >
@@ -358,7 +358,7 @@
             
             <p class="caption">
                 <strong>Section 2: Large-scale Datasets Synthesis Enhancement</strong> <br>
-                In this section, we demonstrate the recovery results of the large-scale dataset synthesis without any training, including LJSpeech, TIMIT, and VCTK. (See Section 7.4 in paper) <br>
+                In this section, we demonstrate the recovery results of the large-scale dataset synthesis without any training, including LJSpeech, TIMIT, and VCTK. (See Section 7.2 in paper) <br>
                 (1) LJSpeech
                 <div class="content">
                     <div class="row" style="display: flex; justify-content: space-between;">
@@ -616,334 +616,9 @@
                 </div>
             </p>
 
-            <p class="caption"></p>
-                <strong>Section 3: Different Noise Interference</strong> <br>
-                In this section, we demonstrate the recovery results of the experiments on different noise interference, including different environmental interference, competing speakers inteference, and human voice interference. (See Section 7.5 in paper) <br>
-                (1) Different Environmental Interference
-                <div class="content">
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Clean speech</strong></p></div>
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Noisy speech</strong></p></div>
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ syn. (ours)</strong></p></div>
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ phy. (ours)</strong></p></div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/clean/aaron_2024_01_12_13_19_32_window_10.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/noisy/aaron_2024_01_12_13_19_32_window_10_1-40154-A-46_snr_-5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/uspeech_syn/aaron_2024_01_12_13_19_32_window_10_1-40154-A-46_snr_-5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/uspeech_phy/aaron_2024_01_12_13_19_32_window_10_1-40154-A-46_snr_-5.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/clean/chengxiao_2024_01_12_16_19_43_window_8.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/noisy/chengxiao_2024_01_12_16_19_43_window_8_1-54505-A-21_snr_-5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/uspeech_syn/chengxiao_2024_01_12_16_19_43_window_8_1-54505-A-21_snr_-5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/uspeech_phy/chengxiao_2024_01_12_16_19_43_window_8_1-54505-A-21_snr_-5.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/clean/sitong_2024_01_11_11_37_36_window_79.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/noisy/sitong_2024_01_11_11_37_36_window_79_3-146964-A-5_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/uspeech_syn/sitong_2024_01_11_11_37_36_window_79_3-146964-A-5_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/uspeech_phy/sitong_2024_01_11_11_37_36_window_79_3-146964-A-5_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/clean/wayne_2024_01_12_19_16_43_window_10.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/noisy/wayne_2024_01_12_19_16_43_window_10_2-85434-A-27_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/uspeech_syn/wayne_2024_01_12_19_16_43_window_10_2-85434-A-27_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/uspeech_phy/wayne_2024_01_12_19_16_43_window_10_2-85434-A-27_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/clean/zxz_2024_01_12_14_33_45_window_39.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/noisy/zxz_2024_01_12_14_33_45_window_39_2-103427-A-3_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/uspeech_syn/zxz_2024_01_12_14_33_45_window_39_2-103427-A-3_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/dei/uspeech_phy/zxz_2024_01_12_14_33_45_window_39_2-103427-A-3_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-                </div>
-            </p>
-
             <p class="caption">
-                (2) Competing Speakers Inteference
-                <div class="content">
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Clean speech</strong></p></div>
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Noisy speech</strong></p></div>
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ syn. (ours)</strong></p></div>
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ phy. (ours)</strong></p></div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/clean/aaron_2024_01_12_13_20_39_window_2.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/noisy/aaron_2024_01_12_13_20_39_window_2_zxz_2024_01_12_15_22_31_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/uspeech_syn/aaron_2024_01_12_13_20_39_window_2_zxz_2024_01_12_15_22_31_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/uspeech_phy/aaron_2024_01_12_13_20_39_window_2_zxz_2024_01_12_15_22_31_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/clean/luca_2024_01_11_16_14_00_window_27.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/noisy/luca_2024_01_11_16_14_00_window_27_wayne_2024_01_12_20_21_42_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/uspeech_syn/luca_2024_01_11_16_14_00_window_27_wayne_2024_01_12_20_21_42_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/uspeech_phy/luca_2024_01_11_16_14_00_window_27_wayne_2024_01_12_20_21_42_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/clean/sitong_2024_01_11_11_41_58_window_73.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/noisy/sitong_2024_01_11_11_41_58_window_73_chengxiao_2024_01_12_17_38_12_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/uspeech_syn/sitong_2024_01_11_11_41_58_window_73_chengxiao_2024_01_12_17_38_12_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/uspeech_phy/sitong_2024_01_11_11_41_58_window_73_chengxiao_2024_01_12_17_38_12_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/clean/wanting_2024_01_11_20_06_40_window_25.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/noisy/wanting_2024_01_11_20_06_40_window_25_wayne_2024_01_12_20_46_56_snr_0.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/uspeech_syn/wanting_2024_01_11_20_06_40_window_25_wayne_2024_01_12_20_46_56_snr_0.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/uspeech_phy/wanting_2024_01_11_20_06_40_window_25_wayne_2024_01_12_20_46_56_snr_0.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/clean/zxz_2024_01_12_14_32_54_window_6.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/noisy/zxz_2024_01_12_14_32_54_window_6_wayne_2024_01_12_20_05_53_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/uspeech_syn/zxz_2024_01_12_14_32_54_window_6_wayne_2024_01_12_20_05_53_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/csi/uspeech_phy/zxz_2024_01_12_14_32_54_window_6_wayne_2024_01_12_20_05_53_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-                </div>
-            </p>
-
-            <p class="caption">
-                (3) Human Voice Interference
-                <div class="content">
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Clean speech</strong></p></div>
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Noisy speech</strong></p></div>
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ syn. (ours)</strong></p></div>
-                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ phy. (ours)</strong></p></div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/clean/aaron_2024_01_12_13_19_32_window_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/noisy/aaron_2024_01_12_13_19_32_window_5_running_2024_03_21_18_29_37_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/uspeech_syn/aaron_2024_01_12_13_19_32_window_5_running_2024_03_21_18_29_37_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/uspeech_phy/aaron_2024_01_12_13_19_32_window_5_running_2024_03_21_18_29_37_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/clean/chengxiao_2024_01_12_16_18_51_window_10.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/noisy/chengxiao_2024_01_12_16_18_51_window_10_ruiming_2024_03_21_21_22_54_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/uspeech_syn/chengxiao_2024_01_12_16_18_51_window_10_ruiming_2024_03_21_21_22_54_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/uspeech_phy/chengxiao_2024_01_12_16_18_51_window_10_ruiming_2024_03_21_21_22_54_snr_5.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/clean/sitong_2024_01_11_11_41_58_window_21.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/noisy/sitong_2024_01_11_11_41_58_window_21_sj_2024_03_21_20_18_33_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/uspeech_syn/sitong_2024_01_11_11_41_58_window_21_sj_2024_03_21_20_18_33_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/uspeech_phy/sitong_2024_01_11_11_41_58_window_21_sj_2024_03_21_20_18_33_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/clean/wanting_2024_01_11_20_06_40_window_7.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/noisy/wanting_2024_01_11_20_06_40_window_7_running_2024_03_21_18_48_41_snr_0.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/uspeech_syn/wanting_2024_01_11_20_06_40_window_7_running_2024_03_21_18_48_41_snr_0.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/uspeech_phy/wanting_2024_01_11_20_06_40_window_7_running_2024_03_21_18_48_41_snr_0.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-
-                    <div class="row" style="display: flex; justify-content: space-between;">
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/clean/zxz_2024_01_12_14_33_19_window_4.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/noisy/zxz_2024_01_12_14_33_19_window_4_running_2024_03_21_18_41_13_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/uspeech_syn/zxz_2024_01_12_14_33_19_window_4_running_2024_03_21_18_41_13_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                        <div class="column" style="flex: 1; text-align: center;">
-                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
-                            <source src="samples/sec3/hvi/uspeech_phy/zxz_2024_01_12_14_33_19_window_4_running_2024_03_21_18_41_13_snr_10.wav" type="audio/wav"></audio>
-                        </div>
-                    </div>
-                </div>
-            </p>
-
-
-
-            <p class="caption">
-                <strong>Section 4: Long-duration Enhancement</strong> <br>
-                In this section, we demonstrate the recovery results of the experiments on long-duration enhancement (See Section 7.9.7 in paper) <br>
+                <strong>Section 3: Long-duration Enhancement</strong> <br>
+                In this section, we demonstrate the recovery results of the experiments on long-duration enhancement (See Section 7.3 in paper) <br>
                 (1) Collected Dataset
                 <div class="content">
                     <div class="row" style="display: flex; justify-content: space-between;">
@@ -1307,7 +982,331 @@
                 </div>
             </p>
 
+
+            <p class="caption">
+                <strong>Section 4: Different Noise Interference</strong> <br>
+                In this section, we demonstrate the recovery results of the experiments on different noise interference, including different environmental interference, competing speakers inteference, and human voice interference. (See Section 7.5 in paper) <br>
+                (1) Different Environmental Interference
+                <div class="content">
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Clean speech</strong></p></div>
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Noisy speech</strong></p></div>
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ syn. (ours)</strong></p></div>
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ phy. (ours)</strong></p></div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/clean/aaron_2024_01_12_13_19_32_window_10.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/noisy/aaron_2024_01_12_13_19_32_window_10_1-40154-A-46_snr_-5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/uspeech_syn/aaron_2024_01_12_13_19_32_window_10_1-40154-A-46_snr_-5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/uspeech_phy/aaron_2024_01_12_13_19_32_window_10_1-40154-A-46_snr_-5.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/clean/chengxiao_2024_01_12_16_19_43_window_8.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/noisy/chengxiao_2024_01_12_16_19_43_window_8_1-54505-A-21_snr_-5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/uspeech_syn/chengxiao_2024_01_12_16_19_43_window_8_1-54505-A-21_snr_-5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/uspeech_phy/chengxiao_2024_01_12_16_19_43_window_8_1-54505-A-21_snr_-5.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/clean/sitong_2024_01_11_11_37_36_window_79.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/noisy/sitong_2024_01_11_11_37_36_window_79_3-146964-A-5_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/uspeech_syn/sitong_2024_01_11_11_37_36_window_79_3-146964-A-5_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/uspeech_phy/sitong_2024_01_11_11_37_36_window_79_3-146964-A-5_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/clean/wayne_2024_01_12_19_16_43_window_10.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/noisy/wayne_2024_01_12_19_16_43_window_10_2-85434-A-27_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/uspeech_syn/wayne_2024_01_12_19_16_43_window_10_2-85434-A-27_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/uspeech_phy/wayne_2024_01_12_19_16_43_window_10_2-85434-A-27_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/clean/zxz_2024_01_12_14_33_45_window_39.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/noisy/zxz_2024_01_12_14_33_45_window_39_2-103427-A-3_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/uspeech_syn/zxz_2024_01_12_14_33_45_window_39_2-103427-A-3_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/dei/uspeech_phy/zxz_2024_01_12_14_33_45_window_39_2-103427-A-3_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+                </div>
             </p>
+
+            <p class="caption">
+                (2) Competing Speakers Inteference
+                <div class="content">
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Clean speech</strong></p></div>
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Noisy speech</strong></p></div>
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ syn. (ours)</strong></p></div>
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ phy. (ours)</strong></p></div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/clean/aaron_2024_01_12_13_20_39_window_2.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/noisy/aaron_2024_01_12_13_20_39_window_2_zxz_2024_01_12_15_22_31_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/uspeech_syn/aaron_2024_01_12_13_20_39_window_2_zxz_2024_01_12_15_22_31_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/uspeech_phy/aaron_2024_01_12_13_20_39_window_2_zxz_2024_01_12_15_22_31_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/clean/luca_2024_01_11_16_14_00_window_27.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/noisy/luca_2024_01_11_16_14_00_window_27_wayne_2024_01_12_20_21_42_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/uspeech_syn/luca_2024_01_11_16_14_00_window_27_wayne_2024_01_12_20_21_42_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/uspeech_phy/luca_2024_01_11_16_14_00_window_27_wayne_2024_01_12_20_21_42_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/clean/sitong_2024_01_11_11_41_58_window_73.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/noisy/sitong_2024_01_11_11_41_58_window_73_chengxiao_2024_01_12_17_38_12_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/uspeech_syn/sitong_2024_01_11_11_41_58_window_73_chengxiao_2024_01_12_17_38_12_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/uspeech_phy/sitong_2024_01_11_11_41_58_window_73_chengxiao_2024_01_12_17_38_12_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/clean/wanting_2024_01_11_20_06_40_window_25.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/noisy/wanting_2024_01_11_20_06_40_window_25_wayne_2024_01_12_20_46_56_snr_0.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/uspeech_syn/wanting_2024_01_11_20_06_40_window_25_wayne_2024_01_12_20_46_56_snr_0.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/uspeech_phy/wanting_2024_01_11_20_06_40_window_25_wayne_2024_01_12_20_46_56_snr_0.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/clean/zxz_2024_01_12_14_32_54_window_6.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/noisy/zxz_2024_01_12_14_32_54_window_6_wayne_2024_01_12_20_05_53_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/uspeech_syn/zxz_2024_01_12_14_32_54_window_6_wayne_2024_01_12_20_05_53_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/csi/uspeech_phy/zxz_2024_01_12_14_32_54_window_6_wayne_2024_01_12_20_05_53_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+                </div>
+            </p>
+
+            <p class="caption">
+                (3) Human Voice Interference
+                <div class="content">
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Clean speech</strong></p></div>
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>Noisy speech</strong></p></div>
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ syn. (ours)</strong></p></div>
+                        <div class="column" style="flex: 1; text-align: center;"><p><strong>USpeech w/ phy. (ours)</strong></p></div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/clean/aaron_2024_01_12_13_19_32_window_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/noisy/aaron_2024_01_12_13_19_32_window_5_running_2024_03_21_18_29_37_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/uspeech_syn/aaron_2024_01_12_13_19_32_window_5_running_2024_03_21_18_29_37_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/uspeech_phy/aaron_2024_01_12_13_19_32_window_5_running_2024_03_21_18_29_37_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/clean/chengxiao_2024_01_12_16_18_51_window_10.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/noisy/chengxiao_2024_01_12_16_18_51_window_10_ruiming_2024_03_21_21_22_54_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/uspeech_syn/chengxiao_2024_01_12_16_18_51_window_10_ruiming_2024_03_21_21_22_54_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/uspeech_phy/chengxiao_2024_01_12_16_18_51_window_10_ruiming_2024_03_21_21_22_54_snr_5.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/clean/sitong_2024_01_11_11_41_58_window_21.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/noisy/sitong_2024_01_11_11_41_58_window_21_sj_2024_03_21_20_18_33_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/uspeech_syn/sitong_2024_01_11_11_41_58_window_21_sj_2024_03_21_20_18_33_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/uspeech_phy/sitong_2024_01_11_11_41_58_window_21_sj_2024_03_21_20_18_33_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/clean/wanting_2024_01_11_20_06_40_window_7.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/noisy/wanting_2024_01_11_20_06_40_window_7_running_2024_03_21_18_48_41_snr_0.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/uspeech_syn/wanting_2024_01_11_20_06_40_window_7_running_2024_03_21_18_48_41_snr_0.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/uspeech_phy/wanting_2024_01_11_20_06_40_window_7_running_2024_03_21_18_48_41_snr_0.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+
+                    <div class="row" style="display: flex; justify-content: space-between;">
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/clean/zxz_2024_01_12_14_33_19_window_4.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/noisy/zxz_2024_01_12_14_33_19_window_4_running_2024_03_21_18_41_13_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/uspeech_syn/zxz_2024_01_12_14_33_19_window_4_running_2024_03_21_18_41_13_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                        <div class="column" style="flex: 1; text-align: center;">
+                            <audio controls class="audio-player" preload="metadata" style="width: 90%;">
+                            <source src="samples/sec3/hvi/uspeech_phy/zxz_2024_01_12_14_33_19_window_4_running_2024_03_21_18_41_13_snr_10.wav" type="audio/wav"></audio>
+                        </div>
+                    </div>
+                </div>
+            </p>
+
+        </p>
 
         </div>
 
