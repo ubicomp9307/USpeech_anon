@@ -15,7 +15,7 @@ Official implementation of USpeech: Ultrasound-Enhanced Speech with Minimal Huma
 To get started with USpeech, follow these steps:
 1. Clone the GitHub repository:
 ``` bash
-$ git clone https://github.com/aiot-lab/USpeech.git
+$ git clone https://github.com/ubicomp9307/USpeech_anon.git
 $ cd USpeech
 $ pip install -r requirements.txt
 
